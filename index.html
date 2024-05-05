@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background-color: #eeeeee;
+        }
+
+        div {
+            width: auto;
+            height: auto;
+            border: none;
+            position: relative;
+            align-items: center;
+            margin-top: -125px;
+        }
+
+        #text {
+            font-size: 144px;
+            text-align: center;
+        }
+
+        #killCounter {
+            font-size: 60px;
+            text-align: right;
+            margin-right:15px;
+            margin-top:-210px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <script>
+        let threads = 0;
+        let throttle = false;
+    </script>
+    <div>
+        <p id="text">25</p>
+        <p id="killCounter"></p>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borderless Web App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        iframe {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://www.intervaltimer.com/timers/11934951-5way"></iframe>
+</body>
+</html> -->

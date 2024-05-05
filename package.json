@@ -1,0 +1,9 @@
+{
+  "name": "timer",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "main.js",
+  "dependencies": {
+    "node-global-key-listener": "^0.2.0"
+  }
+}
