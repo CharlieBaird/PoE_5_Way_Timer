@@ -8,42 +8,57 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            height: 100%;
+            /* height: 100vh; */
+            /* width: 101vw; */
             background-color: #eeeeee;
+            /* display: flex; */
         }
 
-        div {
-            width: auto;
-            height: auto;
-            border: none;
-            position: relative;
-            align-items: center;
-            margin-top: -125px;
-        }
-
-        #text {
-            font-size: 144px;
+        p {
+            font-size: 120px;
             text-align: center;
         }
 
         #killCounter {
-            font-size: 60px;
+            font-size: 50px;
             text-align: right;
-            margin-right:15px;
-            margin-top:-210px;
+            /* margin-right:15px;
+            margin-top:-210px; */
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            margin: 0;
+        }
+
+        #killCounterGeneric {
+            font-size: 50px;
+            text-align: left;
+            /* margin-right:15px;
+            margin-top:-210px; */
+            position: absolute;
+            left: 10px;
+            bottom: 0;
+            margin: 0;
         }
     </style>
 </head>
 
-<body id="body">
+<body>
     <script>
         let threads = 0;
+        let templarThreads = 0;
         let throttle = false;
     </script>
-    <div>
-        <p id="text">25</p>
-        <p id="killCounter"></p>
+    <div style="display: flex; margin-top: -95px;">
+        <div id="body" style="flex:1;">
+            <p id="text">25</p>
+        </div>
+        <div id="templarBody" style="flex:1;">
+            <p id="templarText">25</p>
+        </div>
     </div>
+    <p id="killCounterGeneric">0</p>
+    <p id="killCounter">0</p>
 </body>
 </html>
 
