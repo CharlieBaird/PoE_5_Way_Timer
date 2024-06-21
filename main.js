@@ -149,7 +149,7 @@ function startAukunaTimer()
                 document.getElementById('text').innerHTML = counter;
                 counter = counter - 1;
             }
-        }, 1000);
+        }, 985);
     });
     `;
     win.webContents.executeJavaScript(code);
@@ -201,7 +201,7 @@ function startVoxTimer()
                 document.getElementById('templarText').innerHTML = counter;
                 counter = counter - 1;
             }
-        }, 1000);
+        }, 985);
     });
     `;
     win.webContents.executeJavaScript(code);
@@ -234,7 +234,7 @@ const processLatestLine = (line) => {
         catch (error) {}
     }
 
-    if (line.indexOf(TEMPLAR) !== -1)
+    if (line.indexOf(ETERNAL) !== -1)
     {
         try {
             updateKillCounter();
